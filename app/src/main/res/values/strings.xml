@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">SQLite Browser</string>
+
+    <string name="abrir_db">Open database</string>
+
+    <string name="app_version">v1.0.0</string>
+    <string name="s_exit">Exit</string>
+    <string name="s_create_db">Create Database</string>
+    <string name="s_create_field">Create new field</string>
+    <string name="s_permission">Permission</string>
+    <string name="s_no_permission_msg">you have not yet granted the permissions to open the database</string>
+    <string name="s_database_password">Database password</string>
+    <string name="s_enter_db_pass">Enter the database password</string>
+    <string name="s_pass_not_empty">The password cannot be empty</string>
+    <string name="s_cancel">Cancel</string>
+    <string name="s_error_procesing">Error procesing!</string>
+    <string name="s_notice">Warning</string>
+    <string name="s_ok">OK</string>
+    <string name="s_database_name">Database: %1$s</string>
+    <string name="s_msg_file_is_not_db">This file is not a database</string>
+
+    <string name="s_create_table">Create new table</string>
+    <string name="s_previous">Prev.</string>
+    <string name="s_next">Next</string>
+    <string name="s_fields">Fields</string>
+    <string name="s_new">New</string>
+    <string name="s_data">Data</string>
+    <string name="s_query">Query</string>
+    <string name="s_insert_row">Insert new row</string>
+    <string name="s_save">Save</string>
+    <string name="s_table_with_placeholder">Table: %1$s</string>
+    <string name="s_enter_field_name">Enter the Field name</string>
+    <string name="s_enter_table_name">Enter the Table name</string>
+    <string name="s_pk">Primary Key</string>
+    <string name="s_allow_null">Allow null</string>
+    <string name="s_add_field">Add field</string>
+    <string name="s_data_type">Data type</string>
+    <string name="s_default_value">Default value</string>
+    <string name="s_query_not_empty">The query must not be empty</string>
+    <string name="s_table_name_indicator">Table name:</string>
+    <string name="s_fields_indicator">Fields:</string>
+    <string name="s_wait_msg">Loading please wait…</string>
+    <string name="s_tables">Tables</string>
+    <string name="s_views">Views</string>
+    <string name="s_elegir_db">Choose the database</string>
+
+    <string name="s_index">Index</string>
+
+    <string name="hint_type_database_name">Type database name</string>
+
+</resources>

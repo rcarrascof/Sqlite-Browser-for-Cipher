@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="data_types">
+        <item>TEXT</item>
+        <item>INT</item>
+        <item>BLOB</item>
+        <item>REAL</item>
+        <item>CUSTOM</item>
+    </array>
+</resources>

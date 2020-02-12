@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/ic_grid_on_black_24dp" android:id="@+id/menu_fields" android:title="@string/s_fields" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_note_add_black_24dp" android:id="@+id/menu_new" android:title="@string/s_new" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_folder_open_black_24dp" android:id="@+id/menu_data" android:title="@string/s_data" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_create_black_24dp" android:id="@+id/menu_query" android:title="@string/s_query" app:showAsAction="ifRoom"/>
+</menu>

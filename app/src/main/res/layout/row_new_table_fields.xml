@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentPadding="10dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:id="@+id/columnName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/layoutValues" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/columnName">
+            <TextView android:textStyle="bold" android:id="@+id/dataType" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <TextView android:textStyle="bold" android:id="@+id/default_value" android:layout_width="0dp" android:layout_height="wrap_content" android:text="" android:layout_weight="1"/>
+            <TextView android:textStyle="bold" android:id="@+id/allowNull" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/layoutIndicator" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/layoutValues">
+            <TextView android:id="@+id/labelDataType" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/s_data_type" android:layout_weight="1"/>
+            <TextView android:id="@+id/labelDefaultValue" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/s_default_value" android:layout_weight="1"/>
+            <TextView android:id="@+id/labelAllowNull" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/s_allow_null" android:layout_weight="1"/>
+        </LinearLayout>
+        <View android:id="@+id/separator" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="10dp" android:layout_below="@+id/layoutIndicator" android:alpha="0.5"/>
+        <ImageButton android:id="@+id/btnEdit" android:background="@null" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_edit_black_24dp" android:layout_below="@+id/separator" android:layout_alignParentRight="true" android:alpha="0.7"/>
+        <ImageButton android:id="@+id/btnDelete" android:background="@null" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/ic_delete_black_24dp" android:layout_toLeftOf="@+id/btnEdit" android:layout_below="@+id/separator" android:alpha="0.7"/>
+        <TextView android:textColor="@android:color/white" android:id="@+id/labelPk" android:background="@color/colorPrimary" android:padding="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Primary key" android:layout_below="@+id/separator"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

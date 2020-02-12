@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/layoutHeader" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@+id/btnClose" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/ic_arrow_back_white_24dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/s_exit"/>
+        <ImageButton android:id="@+id/btnInsert" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_save_white_24dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/s_save"/>
+        <TextView android:textStyle="normal" android:textColor="@android:color/white" android:id="@+id/lblTitle" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/s_insert_row" android:layout_toLeftOf="@+id/btnInsert" android:layout_toRightOf="@+id/btnClose" style="@style/TextStyle_Title"/>
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_below="@+id/layoutHeader">
+        <LinearLayout android:orientation="vertical" android:id="@+id/columnsContainer" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </ScrollView>
+</RelativeLayout>
