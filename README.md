@@ -1,30 +1,37 @@
 # SQLite Browser for Cipher
 
-Una herramienta para explorar y gestionar bases de datos SQLite con soporte nativo para **SQLCipher**.
+Explorador de bases de datos SQLite con soporte completo para **SQLCipher**.
 
-## 🛠️ Funcionalidades
+## 🏗️ Arquitectura
 
-*   **Explorador de Archivos**: Abre bases de datos `.db` o `.sqlite`.
-*   **Visor de Tablas**: Visualización completa de esquemas y tablas.
-*   **Data Grid**: Tabla interactiva con soporte para edición de registros (mantener presionado).
-*   **Consola SQL**: Terminal para ejecución de comandos manuales.
-*   **Soporte Cipher**: Acceso a bases de datos cifradas mediante contraseña.
-*   **Acceso Total**: Gestión de archivos sin restricciones de Scoped Storage.
+El proyecto sigue los principios de **Clean Architecture** y patrones de diseño modernos de Android:
 
-## 🏗️ Requisitos de Compilación
+*   **UI Declarativa**: Implementado íntegramente con Jetpack Compose y Material Design 3.
+*   **MVVM (Model-View-ViewModel)**: Gestión de estado reactiva para separar la lógica de negocio de la interfaz.
+*   **Inyección de Dependencias**: Uso de Dagger Hilt para un desacoplamiento robusto entre componentes.
+*   **Data Flow**: Comunicación asíncrona mediante Coroutines y StateFlow.
+*   **Repository Pattern**: Capa de abstracción para el acceso a datos (SQLCipher).
 
-*   **Android Studio Jellyfish** (o superior)
-*   **JDK 21** / **Gradle 8.5**
+## 🛠️ Características Principales
+
+*   **Gestión de Archivos**: Acceso total al almacenamiento (MANAGE_EXTERNAL_STORAGE) para navegación libre por el sistema de archivos.
+*   **Visualización Dinámica**: Grid de datos con soporte para desplazamiento horizontal/vertical y renderizado de valores NULL.
+*   **Consola SQL Interactiva**: Terminal para ejecución de comandos DDL y DML manuales.
+*   **Edición en Vivo**: Interacción mediante pulsación larga para modificar registros directamente en la base de datos.
+*   **Seguridad**: Diálogo de autenticación integrado para bases de datos cifradas con SQLCipher.
+
+## 📦 Tecnologías y Librerías
+
+*   **Compose**: Material 3, Navigation, Hilt Navigation.
+*   **Persistencia**: net.zetetic:android-database-sqlcipher.
+*   **Inyección**: Google Hilt.
+*   **Async**: Kotlin Coroutines & Flow.
+
+## ⚙️ Especificaciones Técnicas
+
 *   **SDK Mínimo**: API 24 (Android 7.0)
 *   **SDK de Compilación**: API 34 (Android 14)
-
-## 📦 Tecnologías
-
-*   Jetpack Compose (Material 3)
-*   Dagger Hilt
-*   Kotlin Coroutines & Flow
-*   SQLCipher for Android (net.zetetic)
-*   Android Navigation Compose
+*   **Build System**: Gradle 8.5 con Kotlin DSL y Catalog de versiones.
 
 ## 📄 Licencia
 
